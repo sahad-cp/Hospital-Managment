@@ -4,10 +4,12 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
 def about(request):
-    return HttpResponse("About page")
+    return render(request,'about.html')
 def booking(request):
-    return HttpResponse("Booking page")
+    return render(request,'booking.html')
 def doctors(request):
-    return HttpResponse("doctors page")
+    return render(request,'doctors.html')
 def contact(request):
-    return HttpResponse("Contact page")
+    return render(request,'contact.html')
+def department(request):
+    return render(request,'department.html')
