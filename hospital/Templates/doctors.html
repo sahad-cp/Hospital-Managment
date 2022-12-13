@@ -7,5 +7,27 @@
 
 
 {% block contant %}
-    <h2>Doctors Page</h2>
+<h2 class="text-center">Our Doctors</h2>
+<hr>
+
+<div class="container text-center">
+    {% for d in doctors %}
+        <div class="card text-center m-3" style="width: 18rem; display:inline-block;">
+            <img src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dr.{{d.doc_name}}</h5>
+                <p class="card-text">{{d.doc_spec}}</p>
+                <h6 class="card-text">{{d.dep_name}} Department</h6>
+                
+             </div>
+        </div>
+    
+
+
+    {% endfor %}
+    
+</div>
+
+
+
 {% endblock  %}

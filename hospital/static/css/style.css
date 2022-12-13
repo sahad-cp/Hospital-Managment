@@ -1,6 +1,10 @@
 
-
+body{
+    position: relative;
+    padding-bottom: 100px;
+}
 nav{
+   
     background-image: linear-gradient(to top right,rgb(5, 238, 5),rgb(27, 131, 27));
 }
 .navbar-brand{
